@@ -1,0 +1,21 @@
+- mixin: css class selector is mixed within other selectors.
+- css handling transition: e.g @keyframes: http://smacss.com/book/state
+- media-query
+- shallow depth of applicapility: http://smacss.com/book/applicability
+- prototyping: create building blocks which, show states, review localisation, isolate dependencies, for reviewing before using it. http://smacss.com/book/prototyping
+- preprocessor: e.g, templating language which is used to be compiled into real css code. 
+- Smacss with preprocessor: http://smacss.com/book/preprocessors
+- icon module
+- selector nesting
+- css cascading
+- rel="preload": allow to load css async
+
+## Grid
+- line: line(start from 1) divide into row or cel
+- grid track: columns or row of the grid
+- fr: unit fraction of free space. If 1 item exists, there are total 1 fr. If 4 items exist, there are total 4 fr can be used. So fraction of free space is average free space that is needed for a single item.
+- grid container: container div
+- area: total space surrounded by number of grid lines.
+- cell: space between 2 row lines and 2 cols lines(it's a cell)
+- gap: container properties, declare gap between row and col.
+- grid-template: container properties, defines template for row and colum.
