@@ -1,0 +1,4 @@
+Encapsulate does group things together and make thing faster to extend etc.
+However the encapsulation process, does tear the context of the single process into smaller pieces. Which therefore make it difficult to see the whole picture for the newcomer.
+
+How do I solve this problem?

@@ -1,0 +1,17 @@
+update redux app on codepen.io. Encountering little intensive computing moment:
+ - Easy to prone to doing chain dispatch inside a reducers(which seems like horrible)
+ - Dispatching logic(whole business logic is in here):
+   - Chain: One dispatch after another in order to achieve a goal.
+   - Group: group and run several dispatches in order to achieve a goal.
+ - Debugging dispatch is fairly hard it seems, if encountering some complex logic.
+
+ * What is the most complex logic that I have encountered during working on any android app?
+   - update to several places.
+   - 
+
+ * How does the native solve react app problems? 
+   - Centralise data management
+   - state dispatch
+   - Isolate and identify logic with Reducer
+
+

@@ -1,0 +1,15 @@
+1. WHAT IS THE MOST IMPORTANT PROBLEM THAT REACT SOLVES?
+I think it's the UI STATE based render.
+
+2. HOW DO I SCHEDULE MY PRACTICE: HOW DO I DESIGN MY 'MAKE SMALLER CIRCLE' REPEATATIONS? WHAT IS MY SMALL, SIMULATED REPEATATIONS?
+- Work on the small stuff: separate components, consolidate it(2 or 3 pieces at a time) 
+- Learn some small related algorithm.
+- Accumulate knowledge.
+- Continue to design the management system.
+
+---- 
+3. What are my circles?
+- state: lots of states, complex one, just state
+- css: write something beautiful and complex
+- break down code and work on the algorithm
+

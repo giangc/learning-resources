@@ -1,0 +1,34 @@
+# Setup simple react app:
+npm install -g create-react-app # Step 1 
+create-react-app # Step 2
+
+Day 1 Recap: Getting started, installing environment. Find a old course from udemy to view core simple explanation, which is quite effective. Get my head around the programming language. Couple of commands, take it slow on environment + libraries, etc.
+
+Interactive Questions:
+
+1. Explain the environment, including: dependencies, tools, important workflow, things that I must know in advance in order to catch up
+- Explain debugging process
+- Explain development process
+
+Plugins:
+
+Color Hightlight 
+Diff 
+Eslint 
+Git Blame
+GitLens
+Indenticator (Cái này a dùng cũng được tại e muốn nhìn thấy tab)
+Prettier 
+vscode-icons
+
+how to debug: https://reactnative.dev/docs/debugging#__docusaurus
+
+mobx instead of redux
+https://mobx.js.org/README.html
+
+hook instead of class 
+https://reactjs.org/docs/hooks-intro.html
+
+node version manager:
+https://github.com/nvm-sh/nvm
+

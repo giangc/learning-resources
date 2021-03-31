@@ -1,0 +1,13 @@
+1. What can I do with JSX?
+- Add html 
+- Add css class name: `className`
+- Add style: `style={{}}`
+- Reference to js variables: {myName}, {clickButton()} {myobject.text}
+
+2. What do I think JSX used for?
+- Write UI
+
+3. How do I think JSX is used?
+- Implement UI template/design system
+- binding data via "reference to js variables" feature.
+

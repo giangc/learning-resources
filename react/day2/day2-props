@@ -1,0 +1,17 @@
+# Definition
+Props help parent component config child component
+
+# Model flow
+- Parent use and provide name for <Child>: 
+``` 
+<Child name="Giang" />
+```
+- Child consume the `name`
+```
+  const Child = props => {
+    return (
+     <div> {props.name} </div>
+    );
+  }
+```
+

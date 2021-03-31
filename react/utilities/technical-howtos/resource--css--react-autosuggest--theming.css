@@ -1,0 +1,97 @@
+.AutoSuggest {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input {
+  font-family: museo-sans, sans-serif;
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+  }
+  @media screen and (max-width: 576px) {
+    width: 80vw;
+  }
+
+  width: 18.875rem;
+  height: 2.75rem;
+  background-color: #f3f3f3;
+  border: none;
+  outline-color: #e2f1f8;
+  color: #00afd9;
+  font-size: 1rem;
+  padding-left: 1.5625rem;
+  border-radius: 0.625rem;
+}
+
+::placeholder,
+::-webkit-input-placeholder {
+  color: #757575;
+  font-family: museo-sans, sans-serif;
+  font-size: 1rem;
+}
+
+.react-autosuggest__input::focus {
+  -webkit-input-placeholder: transparent;
+  -moz-placeholder: transparent;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: relative;
+  margin-top: 1.125rem;
+  width: 40.9375rem;
+  height: 14.0625rem;
+  background: #fff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 50px #012f571a;
+  border-radius: 0.625rem;
+}
+.react-autosuggest__suggestions-container--open::before {
+  content: "";
+  position: absolute;
+  left: 19.25rem;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-top: 0.9375rem solid transparent;
+  border-right: 0.9375rem solid #fff;
+  border-bottom: 14px solid transparent;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.react-autosuggest__suggestions-container--open::after {
+  content: "after"
+}
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 0.625rem 20px;
+}
+/** unused styling apis **/
+.react-autosuggest__suggestion--highlighted {
+  
+}

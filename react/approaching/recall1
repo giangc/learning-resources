@@ -1,0 +1,16 @@
+recall: 
+what is controllable and uncontrollable?
+controllable is state is getting controlled inside React scope
+controllable is state is getting controlled outside React scope and in DOM
+
+give example:
+inside React scope: any value will be set back to the input
+outside React scope: the value can only be access in DOM
+
+yesterday activities:
+public api: unsplash: location, header Authorization: Client-ID YOUR_KEY
+passing props from child to parent via callback
+passing data from parent to child via props
+structuring code: location + endpoints
+React thinking 1: component breaking
+

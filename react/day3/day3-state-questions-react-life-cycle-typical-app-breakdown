@@ -1,0 +1,26 @@
+
+* template string
+* Spinner.defaultProps
+  * What is a default Props?
+* state
+  * What is state? State is data object which is corresponding to a Component.
+  * What is this different to props? Props is like a delivery service, which pass data from jsx tag(e.g: <MyTag />) to its Component
+  * How does state work? when state updates, any of its consumer also update.
+  * What does this mean by state consumer? Any Component that render state values, I call it state consumer.
+  * initializing state once
+  * updating state use this.setState({lat = coords.position.lat})
+* lifecycle:
+  * constructor() {super();}
+* life-cycle methods: 
+  * componentDidMount(): after all the UI is rendered, this will be called once.
+  * componentDidUpdate(): everytimes state is updated, this will be called.
+  * componentWillUnmount(): this is called when a component is about to removed from the DOM.
+* other life-cycle mehthods - rarely used: 
+* App consist of: 
+  * Main App Renderer
+    * RenderHelper methods
+  * Stateless UI Component
+  * UI with data Component
+  * CSS for UI Component: CSS for Main App screen, SeasonDisplay Component, Spinner Component
+  * 
+

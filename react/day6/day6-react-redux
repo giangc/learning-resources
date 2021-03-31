@@ -1,0 +1,21 @@
+# Feeling when implement simple react-redux flow
+
+## Initial knowledge
+- implement react-redux flow requires to have the library 'react-redux'
+- 2 additional Components from the lib in order for react communicate with redux state:
+  - Provider: wrap Redux.createStore(combinedReducers)
+  - connect: communicate with Provider
+- Design change in, folder structures
+  - components
+  - actions - index.js
+  - reducers - index.js
+- There is no dispatch() function to update redux state.
+
+## How to use react-redux lib
+- Provider: is used in ReactDOM.render() as jsx tag - <Provider> </Provider> wrap the whole <App />
+- connect: is used in Components whenever it requires to use action - Reducers. Any used actions are required to pass in connect(mapStateToProps, {action1, action2, action3})
+- mapStateToProps: map needed data from the state to the props that eventually will be used inside render(props) function.
+
+## Illusion of learning.
+- The action, dispatch, and Reducer usage are straight forward in redux. Imagine if we just need to call dispatch inside Button onClick. Which trick me to not blind in front of how to use connect() instead of dispatch.
+

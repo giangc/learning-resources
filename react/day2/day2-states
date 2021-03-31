@@ -1,0 +1,6 @@
+
+- represents data for a component
+- must be initialized
+- can be updated
+- when state updates, component updates
+

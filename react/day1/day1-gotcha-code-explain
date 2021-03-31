@@ -1,0 +1,11 @@
+import // It's actually import code project from node_modules
+const App = () => {} // Create App function on ES5 TypeScript similar to bellow
+const App = function({}); 
+
+
+3 steps in React:
+- Step 1: import dependencies
+- Step 2: Program React Component: A component can be: a function or a class, and render JSX.
+- Step 3: Render react component on html via document.querySelector()
+
+

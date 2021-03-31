@@ -1,0 +1,61 @@
+React eco-system pieces:
+- React
+- ReactDOM
+- Redux
+- Redux selector
+- Thunk
+
+React:
+- app life cycle
+- component
+- props
+- props.children: Some component doesn't know its children ahead of time. Consider using `{props.childen}` to pass all children inside jsx. 
+- controllable and uncontrollable
+- react router
+- ReactNode
+- Wrapper
+- Fragment
+- Forwarding ref
+- 
+---- 
+Redux glossary: 
+- Action Creator: Person who create 
+- Action: desribe some change of the purpose
+- dispatch: take action, make copies, hand off to other object.
+- Reducer
+  - State mutation in redux needs to be pure function.
+  - Reducer must take the previous state and the action is being dispatched, then return the next state of the app. The application state not necessarily change-d all, so Reudx is quite fast.
+- state
+- createStore
+- combineReducers
+- Selector
+- Normalisation
+- Middleware
+- Redux Side effects
+
+Redux basic flow With the analogy of insuarance company From Udemy course:
+- Customer who droping the form
+- the form
+- send the form the different department
+- Central repository of data
+- slice of data
+
+----
+I don't really know yet: 
+
+ReactNode
+Wrapper
+react-router
+
+---
+js:
+- name import: import name of function which was exported
+- default import: import export default function/name
+- pure function and impure function
+  - pure function: function is pure if its return relies only on its parameter. The result is always the same/no side effect if you add the same parameter.
+  - impure function: function is impure if it operates something else rather than only computing with its parameter. Such as: manipulate DOM, update database and so on.
+
+--- 
+css: 
+- Grid system
+

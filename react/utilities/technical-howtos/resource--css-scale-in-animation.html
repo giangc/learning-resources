@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: .75s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+}
+
+@keyframes example {
+    0% {
+     transform: scale(0.8,.8);
+    }
+    25% {
+     transform: scale(1,1);
+    }
+	50% {
+      transform: scale(1.25,1.25);
+    }
+    100% {
+    transform: scale(1,1);
+    }
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+</body>
+</html>
+

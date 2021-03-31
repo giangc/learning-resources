@@ -1,0 +1,301 @@
+Babel:
+Webpack
+
+import // It's actually import code project from node_modules
+const App = () => {} // Create App function on ES5 TypeScript similar to bellow
+const App = function({}); 
+
+
+3 steps in React:
+- Step 1: import dependencies
+- Step 2: Program React Component: A component can be: a function or a class, and render JSX.
+- Step 3: Render react component on html via document.querySelector()
+
+
+# Introduction code with React
+
+* depdendencies:
+  * react: core library for react
+  * react-dom: react library that renders on DOM
+ 
+* Simple project code on react:
+
+**Javascript**
+* class MyApp extends App.Component{}: 
+  * logic function: onMouseMove(event) => transform mouse position to the opposite event.mouseX and event.mouseY 
+  * logic function: 
+  * render(){} => return the render HTML code 
+* ReactDom.render => return the MyApp component as HTML Tag: <MyApp />
+
+**CSS**
+* Intialise the overall layout sketch for the whole page.
+  * div {width: 100wh; height: 100wh}
+  * load background: url("www.abccxyz.asdasd")
+
+**HTML**
+* Declaration of the layout
+
+**Javascript in Details**  
+In MyApp extends React.Component 
+ - state
+ - this.setState
+ - render()
+
+In ReactDOM.render:
+ReactDOM.render(
+<MyApp />,
+document.querySelector('#root')
+);
+
+JSX is HTML sting can be returned directly from javascript, which is the feature from ESScript05 
+E.g: 
+ <div> Hello there!</div> in HTML can be equivalent to
+ return <div> Hello there!</div> in TypeScript
+
+# Convert from HTML to JSX + Explanation(styling and everything)
+
+ <div style="backgroundColor:blue;">Hi There!</div>
+
+ <div style={{backgroundColor:"blue"}}>Hi There! </div>
+
+# Setup simple react app:
+npm install -g create-react-app # Step 1 
+create-react-app # Step 2
+
+Day 1 Recap: Getting started, installing environment. Find a old course from udemy to view core simple explanation, which is quite effective. Get my head around the programming language. Couple of commands, take it slow on environment + libraries, etc.
+
+Interactive Questions:
+
+1. Explain the environment, including: dependencies, tools, important workflow, things that I must know in advance in order to catch up
+- Explain debugging process
+- Explain development process
+
+Plugins:
+
+Color Hightlight 
+Diff 
+Eslint 
+Git Blame
+GitLens
+Indenticator (Cái này a dùng cũng được tại e muốn nhìn thấy tab)
+Prettier 
+vscode-icons
+
+how to debug: https://reactnative.dev/docs/debugging#__docusaurus
+
+mobx instead of redux
+https://mobx.js.org/README.html
+
+hook instead of class 
+https://reactjs.org/docs/hooks-intro.html
+
+node version manager:
+https://github.com/nvm-sh/nvm
+
+Three characteristics of React Components: 
+ - Component Nesting: Component can be a nested component(child) to another component(parent).
+ - Component Reusability: Component can be used everywhere as long as it's exported.
+ - Component Configuration: Component can be configurable via props.
+
+1. What can I do with JSX?
+- Add html 
+- Add css class name: `className`
+- Add style: `style={{}}`
+- Reference to js variables: {myName}, {clickButton()} {myobject.text}
+
+2. What do I think JSX used for?
+- Write UI
+
+3. How do I think JSX is used?
+- Implement UI template/design system
+- binding data via "reference to js variables" feature.
+
+# Explanation
+Passing a jsx card to down to child component(nested component).
+
+In the child component, the jsx card is inside `props`, and act as a javascript object. Because inside the child component, the jsx card is now a javascript cobject, therefore to access it, requires using `{props.children}`
+
+Question is: what if I pass multiple jsx cards down to child compoent? How the `{props.children}` works? 
+
+# Definition
+Props help parent component config child component
+
+# Model flow
+- Parent use and provide name for <Child>: 
+``` 
+<Child name="Giang" />
+```
+- Child consume the `name`
+```
+  const Child = props => {
+    return (
+     <div> {props.name} </div>
+    );
+  }
+```
+
+
+- represents data for a component
+- must be initialized
+- can be updated
+- when state updates, component updates
+
+
+* template string
+* Spinner.defaultProps
+  * What is a default Props?
+* state
+  * What is state? State is data object which is corresponding to a Component.
+  * What is this different to props? Props is like a delivery service, which pass data from jsx tag(e.g: <MyTag />) to its Component
+  * How does state work? when state updates, any of its consumer also update.
+  * What does this mean by state consumer? Any Component that render state values, I call it state consumer.
+  * initializing state once
+  * updating state use this.setState({lat = coords.position.lat})
+* lifecycle:
+  * constructor() {super();}
+* life-cycle methods: 
+  * componentDidMount(): after all the UI is rendered, this will be called once.
+  * componentDidUpdate(): everytimes state is updated, this will be called.
+  * componentWillUnmount(): this is called when a component is about to removed from the DOM.
+* other life-cycle mehthods - rarely used: 
+* App consist of: 
+  * Main App Renderer
+    * RenderHelper methods
+  * Stateless UI Component
+  * UI with data Component
+  * CSS for UI Component: CSS for Main App screen, SeasonDisplay Component, Spinner Component
+  * 
+
+Creating apps with multiple components:
+ - Sketch out the structure of the app via import statements
+ - Based on that create those files.
+- onChange
+- onSubmit
+- onClick
+
+onChange={onInputChange()} vs. onChange={onInputChange}
+-> onInputChange is callback function not a function
+ If the onInputChange is a function, then everytime render is called, onInputChange() is called because it's the function not a callback.
+
+- Control and uncontrol
+ Control event is props value that can be controlled inside the React scope
+ Uncontrol event value is props value that cannot be known or change in React scope, it usually in DOM value.
+
+event.preventDefault()
+
+array.map = each => {
+  return each * 10
+}
+Encapsulate does group things together and make thing faster to extend etc.
+However the encapsulation process, does tear the context of the single process into smaller pieces. Which therefore make it difficult to see the whole picture for the newcomer.
+
+How do I solve this problem?
+Insuarance company analogy
+
+... fill in the analogy details here ... 
+
+
+Customer fill 1 one form 
+Receiver take the customer-form and pass it to three other department: policy, claim history and accounting
+Management team who wants to control the process.
+
+
+Networking tools used:
+- unsplash.com # apis for pictures.
+- axios
+- fetch function: basic function but not used. Because it's primitive
+
+Purpose of the key when rendering a list in React, is to update if necessary on the list.
+Each item is stored on each distinguishable list.
+
+Deconstruction of js object: 
+
+.. Example:
+
+... 
+
+this.state = {term: "Term 1"}
+
+<form onSubmit={onFormSubmit} .. </form>
+
+onFormSubmit(event){
+  console.log(this.state.term)
+}
+
+-> Error message: Cannot read property state of undefined.
+Break down in a machine way 
+"undefined" is javascript object
+either "undefined" has not been created or "undefined".state has not been created.
+
+Solving the problem: 
+- use constructor() with bind()
+- use arrow function
+Use ReactRef to reference the DOM element. This is essentially needed when I need to manipulate DOM element, e.g: adjusting, styling after loading data.
+
+1. Create a ReactRef with image
+  - In constructor: this.imageRef = React.createRef()
+  - In jsx: ref={imageRef}
+
+2. Update styling with ReactRef.
+In a task of: Re-adjust size of image after is get loaded:
+- add event load in the react ref, and callback function, in componentDidMount() method
+  imageRef.addEventListener('load', setSpans)
+  
+  const setSpans = () => {/*compute code here.*/} 
+update redux app on codepen.io. Encountering little intensive computing moment:
+ - Easy to prone to doing chain dispatch inside a reducers(which seems like horrible)
+ - Dispatching logic(whole business logic is in here):
+   - Chain: One dispatch after another in order to achieve a goal.
+   - Group: group and run several dispatches in order to achieve a goal.
+ - Debugging dispatch is fairly hard it seems, if encountering some complex logic.
+
+ * What is the most complex logic that I have encountered during working on any android app?
+   - update to several places.
+   - 
+
+ * How does the native solve react app problems? 
+   - Centralise data management
+   - state dispatch
+   - Isolate and identify logic with Reducer
+
+
+# Feeling when implement simple react-redux flow
+
+## Initial knowledge
+- implement react-redux flow requires to have the library 'react-redux'
+- 2 additional Components from the lib in order for react communicate with redux state:
+  - Provider: wrap Redux.createStore(combinedReducers)
+  - connect: communicate with Provider
+- Design change in, folder structures
+  - components
+  - actions - index.js
+  - reducers - index.js
+- There is no dispatch() function to update redux state.
+
+## How to use react-redux lib
+- Provider: is used in ReactDOM.render() as jsx tag - <Provider> </Provider> wrap the whole <App />
+- connect: is used in Components whenever it requires to use action - Reducers. Any used actions are required to pass in connect(mapStateToProps, {action1, action2, action3})
+- mapStateToProps: map needed data from the state to the props that eventually will be used inside render(props) function.
+
+## Illusion of learning.
+- The action, dispatch, and Reducer usage are straight forward in redux. Imagine if we just need to call dispatch inside Button onClick. Which trick me to not blind in front of how to use connect() instead of dispatch.
+
+https://reactjs.org/docs/thinking-in-react.html
+How to find which one is state?
+Design process of states.
+
+"
+Think of all of the pieces of data in our example application. We have:
+
+The original list of products
+The search text the user has entered
+The value of the checkbox
+The filtered list of products
+
+1. it passed in from a parent via props? If so, it probably isn’t state.
+2. Does it remain unchanged over time? If so, it probably isn’t state.
+3. Can you compute it based on any other state or props in your component? If so, it isn’t state.
+"
+..
+
+

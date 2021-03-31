@@ -1,0 +1,58 @@
+- from an array, create a new array, append another element into that array, [immutable-array-example]
+[...thisIsMyList, newItem]
+
+- from an array, find an object with a name of 'Hanns' and reject it, [filter-example]
+return anArray.filter(name => name !== 'Hanns')
+// The filter() method creates an array, filled with all array elements that pass a test
+
+* What is this?
+const { createStore, combineReducers } = Redux;
+
+- destructuring the the object value
+({name, description, urls}) => return <img alt={description} src={urls.regular}/>
+
+- Check type of value
+typeOf Math;//object
+typeOf 1; // int
+
+- Error: '<your_oject_name> is not a constructor
+
+- Create new object using object constructor
+let myObject = new Object()
+
+- Create new object using object literal
+let myObject = {} 
+
+- properties can be computed
+ let fruit = prompt("Which fruit is to buy? apple?");
+ let bag = {
+  [fruit]: 5,
+}
+ alert(bag.apple)
+
+- Array methods
+  - create new array methods(using for purpose of immutable):
+    - map(): create a new array, which contains all mapped element from the old array
+
+- **in** operator:
+  - check the existence
+  - Looping inside object, a.k.a: for keys in object, use for ... in 
+
+- Looping: for each use for...of
+
+- Join/consolidate array to a string: use join(arg)
+ result.join(' ')
+
+- Disable enter default submit form in <form> <input>
+ inside onSubmit callback: <input onSubmit={onSubmitForm} /> : `event.preventDefault()`
+
+- Inline If with Logical && Operator
+https://reactjs.org/docs/conditional-rendering.html#inline-if-with-logical--operator
+It works because in JavaScript, true && expression always evaluates to expression, and false && expression always evaluates to false.
+
+**Please move it to glossary page**
+- object constructor
+- object literal
+- square bracket
+- middleware
+

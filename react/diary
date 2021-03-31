@@ -1,0 +1,85 @@
+## Plan
+- [x] Extract to Image Card
+- [x] Image Card: passing info using props
+- [x] create a css file
+- [x] apply css style into React
+- [x] program css: display: grid to Image List
+
+## Obstacles
+- How do I use the css?
+  * Naming convention with css: ImageList.css
+  * put the className inside its container, not the ImageCard
+  * Use `className="image-list"` instead of `className={className}` is wrong! : this is reference of js object.
+# plan
+
+* [x] run again and brainstorm what I'm going to build.
+* [x] fix the display grid to display 3 cols(probably typo)
+* create a menu where: list pictures, search picture
+  +  sketch UI: 
+  + [x] Break down component: Menu, Search, List
+  + [x] menu -> search; menu -> list
+  + [x] conditional rendering
+  + [x] search
+  + [x] list
+  + [x] menu: semnatic ui menu
+  + [x] onClick callback: update tab state
+  + [x] reference of those tab: use ReactRef.
+  + tab-state: update tab-state via Ref: React.createRef() receives the underlying DOM element as its current property?? This very questionable
+  + [x] state based rendering
+  [x] list pictures api
+
+* [ ] add tabs display car, house and flowers
+* [ ] save for favorite pictures
+* [ ] Enhance UI: display a big picture and white title in the middle
+* [ ] learn about the css unit, anything more flexible?
+
+# QA
+
+1. how to display in 3 cols?
+* auto-fill let the browser decide howmany col displayed.??
+2. grid-template-columns does not work?
+* worked: grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+3. Conditional rendering? done
+4. how do I create links?
+* onClick callback: update tab state
+* tab-state:
+* reference of those tab: use ReactRef.
+5. How to take optional param in axios?
+
+6. default value in js?
+7. I only remember componentDidMount?, because it's like the the onCreate, what the other
+
+# glossary
+
+# cheatsheet
+
+# links
+
+* (detailed doc page)[https://devdocs.io/react/]
+* (html script explain)[https://gist.github.com/jakub-g/385ee6b41085303a53ad92c7c8afd7a6]
+* https://magic.reactjs.net/htmltojsx.htm
+
+# mental model
+
+1. Remember React is state based render system. Every rendering needs to go thru state!
+  + get the response by call api, await for it
+  + update the state.
+  + map state to render.
+2. List based requires to have key defined on the direct child defined on the list item. Not on the Child component
+3. Refactoring problem, when puting data directly inside the Component:
+  + Moving to other class cause: "undefined" due to null
+4. Resuing problem: could be quite painful if, the data image are misaligned between function Search and function List.
+5. Avoid loading data inside render(), it's quite hard to remember for the first time building.
+
+# Log
+
+  PROBLEM1: define a const inside a class
+  PROBLEM2: call a function inside class -> cat all-day2
+  PROBLEM3: Null TypeSafe in js: -> typeof props.images !== 'undefined'
+   https://stackoverflow.com/questions/40735406/checking-for-undefined-in-react
+  PROBLEM4: add onClick listener on a.
+  PROBLEM5: when to use ref: https://reactjs.org/docs/refs-and-the-dom.html
+  PROBLEM6: passing the onclick function on jsx -> onSearchImageClick = (e) => {
+  PROBLEM7: append class javascript: this.tabSearch.current.addClass is not a function
+  PROBLEM8: state based rendering.-> [v]
+

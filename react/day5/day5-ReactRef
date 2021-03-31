@@ -1,0 +1,12 @@
+Use ReactRef to reference the DOM element. This is essentially needed when I need to manipulate DOM element, e.g: adjusting, styling after loading data.
+
+1. Create a ReactRef with image
+  - In constructor: this.imageRef = React.ReactRef()
+  - In jsx: ref=${imageRef}
+
+2. Update styling with ReactRef.
+In a task of: Re-adjust size of image after is get loaded:
+- add event load in the react ref, and callback function, in componentDidMount() method
+  imageRef.addEventListener('load', setSpans)
+  
+  const setSpans = () => {/*compute code here.*/} 

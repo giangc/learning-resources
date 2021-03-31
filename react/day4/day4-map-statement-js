@@ -1,0 +1,3 @@
+array.map = each => {
+  return each * 10
+}

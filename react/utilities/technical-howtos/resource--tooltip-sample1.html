@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 450px;
+  min-width: 175px;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.class-2 {
+	width: 250px;
+}
+
+.flex-container:hover .class-3 {
+	display: block;
+}
+
+.class-3 {
+	display: none;
+    min-width: 100px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div>1</div>
+  <div class='class-2'>2</div>
+  <div class='class-3'>3 Something very long: A Flexible Layout must have a parent element with the <em>display</em> property set to</div>  
+
+</div>
+<br/> 
+<div class="flex-container">
+  <div>1</div>
+  <div class='class-2'>2</div>
+  <div class='class-3'>3 Something very long</div>  
+
+</div>
+<br/> 
+<div class="flex-container">
+  <div>1</div>
+  <div class='class-2'>2</div>
+  <div class='class-3'>3 </div>  
+
+</div>
+
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+</body>
+</html>
+

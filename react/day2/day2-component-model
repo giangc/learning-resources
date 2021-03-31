@@ -1,0 +1,5 @@
+Three characteristics of React Components: 
+ - Component Nesting: Component can be a nested component(child) to another component(parent).
+ - Component Reusability: Component can be used everywhere as long as it's exported.
+ - Component Configuration: Component can be configurable via props.
+

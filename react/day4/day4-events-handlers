@@ -1,0 +1,14 @@
+- onChange
+- onSubmit
+- onClick
+
+onChange={onInputChange()} vs. onChange={onInputChange}
+-> onInputChange is callback function not a function
+ If the onInputChange is a function, then everytime render is called, onInputChange() is called because it's the function not a callback.
+
+- Control and uncontrol
+ Control event is props value that can be controlled inside the React scope
+ Uncontrol event value is props value that cannot be known or change in React scope, it usually in DOM value.
+
+event.preventDefault()
+

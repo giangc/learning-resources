@@ -1,0 +1,11 @@
+JSX is HTML sting can be returned directly from javascript, which is the feature from ESScript05 
+E.g: 
+ <div> Hello there!</div> in HTML can be equivalent to
+ return <div> Hello there!</div> in TypeScript
+
+# Convert from HTML to JSX + Explanation(styling and everything)
+
+ <div style="backgroundColor:blue;">Hi There!</div>
+
+ <div style={{backgroundColor:"blue"}}>Hi There! </div>
+

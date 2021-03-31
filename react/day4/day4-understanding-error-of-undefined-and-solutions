@@ -1,0 +1,20 @@
+.. Example:
+
+... 
+
+this.state = {term: "Term 1"}
+
+<form onSubmit={onFormSubmit} .. </form>
+
+onFormSubmit(event){
+  console.log(this.state.term)
+}
+
+-> Error message: Cannot read property state of undefined.
+Break down in a machine way 
+"undefined" is javascript object
+either "undefined" has not been created or "undefined".state has not been created.
+
+Solving the problem: 
+- use constructor() with bind()
+- use arrow function

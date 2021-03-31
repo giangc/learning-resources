@@ -1,0 +1,10 @@
+Networking tools used:
+- unsplash.com # apis for pictures.
+- axios
+- fetch function: basic function but not used. Because it's primitive
+
+Purpose of the key when rendering a list in React, is to update if necessary on the list.
+Each item is stored on each distinguishable list.
+
+Deconstruction of js object: 
+

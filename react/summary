@@ -1,0 +1,35 @@
+**summary**: what dependencies does this app contains?
+ - axios: networking
+ - semantic-ui: styling
+
+**summary**: which things that I could learn?
+- practice using public api: this skill is very useful
+- learn to use some senmatic ui
+- fetch images from public api: unsplash api
+- store api info inside api/
+- each api will be each files
+- map each to jsx
+- return all inside the div
+- practice using displayed grid
+
+**glossary:semantic-ui: design system** 
+- usefulness? baseline to create any stuff
+- ui
+- ui container: main container
+- ui container input: main container for input
+- ui segment
+- ui form
+- div field: field in a template
+- react dev tool: https://fb.me/react-devtools
+
+**glossary:js: event handler** 
+- onChange
+- onSubmit
+- onClick
+
+**glossary:react: event handler** 
+- each child should have a unique key list: every list item should be assigned with unique id, so that I could optimize the rendering the list inside React.
+
+**glossary**
+- [learn grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)
+
