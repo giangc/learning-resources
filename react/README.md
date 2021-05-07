@@ -1,7 +1,8 @@
-# https://www.udemy.com/course/react-redux/
+# Courses
+* https://www.udemy.com/course/react-redux/
 
-# COMMON COMMANDS
- - Create a project: `create-react-app <app_name>`
+# Commands
+* Create a project: `create-react-app <app_name>`
 
 # General Advice
 process of knowing: js -> typescript -> reactjs -> react native
