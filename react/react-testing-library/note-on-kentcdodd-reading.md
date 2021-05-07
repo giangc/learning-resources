@@ -124,8 +124,11 @@ https://kentcdodds.com/blog/how-to-know-what-to-test
 > For all of these, rather than thinking about the code, think about the observable effect that code has for the end user and developer user, that's your use case, test that
 
 * User interactions (using fireEvent from React Testing Library): Is the end user able to interact with the elements that the component renders?
+
 * Changing props (using rerender from React Testing Library): What happens when the developer user re-renders your component with new props?
+
 * Context changes (using rerender from React Testing Library): What happens when the developer user changes context resulting in your component re-rendering?
+
 * Subscription changes: What happens when an event emitter the component subscribes to changes? (Like firebase, a redux store, a router, a media query, or DOM-based subscriptions like online status)
 
 * What part of this app would make me most upset if it were broken?
