@@ -43,10 +43,7 @@ Redux basic flow With the analogy of insuarance company From Udemy course:
 ----
 I don't really know yet: 
 
-ReactNode
-Wrapper
-react-router
-
+...
 ---
 js:
 - name import: import name of function which was exported
@@ -59,3 +56,17 @@ js:
 css: 
 - Grid system
 
+--- 
+Gatsby
+
+- Component or page component
+- Rehydration
+- Static content
+- Client only route
+- File system route api
+- Authenticated gated route
+
+--- 
+Testing
+
+- Test flakiness: Test that can be passed or fail by just running on different time

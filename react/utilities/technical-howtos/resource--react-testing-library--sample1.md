@@ -1,13 +1,19 @@
-```
+``` js
 import React from 'react'
-import { screen, fireEvent, getByText } from '@testing-library/dom'
-import { render } from '@testing-library/react';
+import {
+    screen,
+    fireEvent,
+    getByText
+} from '@testing-library/dom'
+import {
+    render
+} from '@testing-library/react';
 import Tooltip from '../Tooltip'
 
-
 describe('<Tooltip /> ', () => {
+
     it('renders Tooltip', () => {
-        const tree = render(<Tooltip />)
+        const tree = render( < Tooltip / > )
         expect(tree).toMatchSnapshot()
     })
 
@@ -25,7 +31,9 @@ describe('<Tooltip /> ', () => {
         'Display message Why do we need this and ' +
         'After hover, display message' +
         'We need to know your workplace suburb to ensure you’re signing up to the correct SDA branch.', () => {
-            const { container } = renderComponent({
+            const {
+                container
+            } = renderComponent({
                 inputName: "suburbWork",
                 message: "Why do we need this?",
                 tooltip_message: "We need to know your workplace suburb to ensure you’re signing up to the correct SDA branch."
